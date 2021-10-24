@@ -1,0 +1,552 @@
+/*Util*/
+/*reset*/
+* {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+body {
+  background-color: #F8F1F1;
+  width: 100%; }
+
+/*GRID Inicio y Contacatanos*/
+.inicioBloque {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: repeat(5, auto);
+  /*  background-color: #2196F3; */
+  padding: 10px;
+  gap: 5px; }
+
+.inicioBloque > * {
+  /*  background-color: rgba(255, 255, 255, 0.8); */
+  /*  border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 10px;
+  font-size: 15px;
+  text-align: center; }
+
+header {
+  grid-column: 1/span 3;
+  grid-row: 1;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center; }
+
+nav {
+  grid-column: 1/span 3;
+  grid-row: 2; }
+
+article {
+  grid-column: 1/span 3;
+  grid-row: 3;
+  font-size: 15px;
+  text-align: center;
+  align-items: center; }
+
+aside {
+  grid-column-start: 2;
+  grid-row: 4;
+  padding: 5px; }
+
+form {
+  grid-column-start: 2;
+  grid-row: 3;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: left; }
+
+.menuDesplegable {
+  grid-column-start: 2;
+  grid-row: 3;
+  width: 180px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  text-align: left; }
+
+.checkBox {
+  grid-column-start: 2;
+  grid-row: 4;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  text-align: left; }
+
+.boton {
+  grid-column-start: 2;
+  grid-row: 4;
+  padding: 15px;
+  margin: 5px;
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  align-self: center; }
+
+footer {
+  grid-column: 1/span 3;
+  grid-row: 5;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #3a8b89;
+  background-color: #A3D2CA;
+  font-family: 'Style Script', cursive;
+  margin-top: 15px;
+  font-size: 200%;
+  border-radius: 5px; }
+
+/*GRID Montessori*/
+.montiBloque {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: repeat(6, auto);
+  /*  background-color: #2196F3; */
+  padding: 10px;
+  gap: 5px; }
+
+.montiBloque > * {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 10px;
+  font-size: 15px;
+  text-align: center; }
+
+.montiVideo {
+  grid-column: 1/span 2;
+  grid-row: 3; }
+
+.montiTip {
+  grid-column-start: 3;
+  grid-row: 3;
+  padding: 5px;
+  border-radius: 5px;
+  color: #5EAAA8;
+  font-family: 'Indie Flower', cursive;
+  font-size: 120%;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1.0;
+  width: 250px; }
+
+.juegoTitulo {
+  grid-column: 1/span 3;
+  grid-row: 4; }
+
+.imgUno {
+  grid-column-start: 1;
+  display: inline;
+  grid-row: 5; }
+
+.imgDos {
+  grid-column-start: 2;
+  display: inline;
+  grid-row: 5; }
+
+.imgTres {
+  grid-column-start: 3;
+  display: inline;
+  grid-row: 5; }
+
+.montiFooter {
+  grid-column: 1/span 3;
+  grid-row: 6;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #3a8b89;
+  background-color: #A3D2CA;
+  font-family: 'Style Script', cursive;
+  margin-top: 15px;
+  font-size: 200%;
+  border-radius: 5px; }
+
+/*GRID Productos*/
+.productoBloque {
+  display: grid;
+  grid-template-columns: 25% auto auto 25%;
+  grid-template-rows: repeat(6, auto);
+  /* background-color: #2196F3; */
+  padding: 10px;
+  gap: 5px; }
+
+.productoBloque > * {
+  /*  background-color: rgba(255, 255, 255, 0.8); */
+  /*  border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 10px;
+  font-size: 15px;
+  text-align: center; }
+
+.prodHeader {
+  grid-column: 1/span 4;
+  grid-row: 1; }
+
+.prodMenu {
+  grid-column: 1/span 4;
+  grid-row: 2; }
+
+.descripcion {
+  grid-column: 2/span 2;
+  grid-row: 3; }
+
+.imgprodUno {
+  grid-column-start: 1;
+  grid-row: 4;
+  background-color: #cce9e4;
+  border-radius: 5px; }
+
+.imgprodDos {
+  grid-column-start: 2;
+  grid-row: 4;
+  background-color: #cce9e4;
+  border-radius: 5px; }
+
+.imgprodTres {
+  grid-column-start: 3;
+  grid-row: 4;
+  background-color: #cce9e4;
+  border-radius: 5px; }
+
+.imgprodCuatro {
+  grid-column-start: 4;
+  grid-row: 4;
+  background-color: #cce9e4;
+  border-radius: 5px; }
+
+.prodFooter {
+  grid-column: 1/span 4;
+  grid-row: 6; }
+
+/*Partials*/
+/* @import "./partials/header";
+@import "./partials/footer";
+@import "./partials/menu";
+@import "./partials/tablas";
+@import "./partials/imagenes"; */
+/*Paginas*/
+/*estilos inicio y form contacto*/
+/*Titulo Principal*/
+.tituloP {
+  color: #DB6400;
+  font-family: 'Style Script', cursive;
+  text-align: center;
+  font-size: 60px;
+  margin-left: 5px; }
+
+/*Logo*/
+.logo {
+  width: 130px;
+  margin-left: 5px;
+  animation: logoMove 10s infinite; }
+
+@keyframes logoMove {
+  0% {
+    transform: rotate(-20deg); }
+  50% {
+    transform: rotate(20deg); }
+  100% {
+    transform: rotate(-20deg); } }
+
+/*Logo redes sociales*/
+.header__imgRs {
+  width: 35px;
+  height: 35px;
+  align-self: flex-start;
+  order: 5;
+  animation: redMove 10s infinite; }
+
+@keyframes redMove {
+  0% {
+    transform: rotateX(50deg); }
+  50% {
+    transform: rotateY(150deg); }
+  75% {
+    transform: rotateZ(90deg); }
+  100% {
+    transform: rotateX(50deg); } }
+
+/*Menu Paginas*/
+.menuPag {
+  margin-left: 5px;
+  text-decoration: none;
+  display: inline-block; }
+
+.menuPag > li {
+  float: left; }
+
+.menuPag li a {
+  background-color: #A3D2CA;
+  color: #3a8b89;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+  border-radius: 5px; }
+
+.menuPag li:hover {
+  background-color: #A3D2CA;
+  text-decoration: none; }
+
+.menuPag li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px; }
+
+.menuPag li ul li {
+  position: relative; }
+
+.menuPag li ul li ul {
+  right: -140px;
+  top: 0px; }
+
+.menuPag:hover > ul {
+  display: block; }
+
+/*Subtitulos*/
+.subTitulo {
+  color: #FFA45B;
+  font-weight: 900;
+  font-size: 250%;
+  font-family: 'Style Script', cursive; }
+
+/*Texto Principal*/
+.textoPrincipal {
+  margin-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-size: 150%;
+  color: #5EAAA8;
+  font-weight: bolder;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  line-height: 1.6; }
+
+.subTitulocontact {
+  color: #FFA45B;
+  font-weight: 900;
+  font-size: 120%;
+  font-family: 'Indie Flower', cursive; }
+
+/*Pie Pagina*/
+.footer__imgRsf {
+  width: 35px;
+  height: 35px; }
+
+/*estilos productos*/
+/*Imagenes Productos*/
+.imgProduct {
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+  margin-left: 15px;
+  margin: 3px;
+  transition: all 0.3s ease-out; }
+
+.imgProduct:hover {
+  transform: scale(1.5, 1.5) translate(50px, 20px);
+  -webkit-transform: scale(1.3);
+  margin-left: 35px;
+  backface-visibility: hidden;
+  opacity: 1; }
+
+.productDesc {
+  width: 400px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  color: #5EAAA8;
+  font-family: 'Indie Flower', cursive;
+  font-size: 130%;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.6;
+  display: inline; }
+
+/*Valor Precio y Descripciones*/
+.nameProduct {
+  color: #FFA45B;
+  font-family: 'Style Script', cursive;
+  margin-left: 15px;
+  margin-top: 5px;
+  display: block; }
+
+.precioProduct {
+  color: #FFA45B;
+  font-family: 'Style Script', cursive;
+  margin-left: 15px;
+  font-size: 130%;
+  display: block; }
+
+.prodFooter__imgRsf {
+  width: 35px;
+  height: 35px; }
+
+/*estilos pag montissori*/
+/*Pie Pagina*/
+.montiFooter__imgRsf {
+  width: 35px;
+  height: 35px; }
+
+.nameJuego {
+  color: #FFA45B;
+  font-family: 'Style Script', cursive;
+  margin-left: 15px;
+  margin-top: 5px;
+  font-size: 25px; }
+
+/*INICIO Media Queries Bootstrap*/
+@media (max-width: 575.98px) {
+  header {
+    grid-column: 1/span 3;
+    grid-row: 1;
+    display: block; }
+  .inicioBloque {
+    grid-template-rows: repeat(5, auto); }
+  .textoPrincipal {
+    padding: 10Px;
+    font-size: 150%;
+    text-align: left;
+    line-height: 1; }
+  aside {
+    grid-column: 1/span 3;
+    grid-row: 4; }
+  .boton {
+    flex-direction: column; }
+  footer {
+    grid-column: 1/span 3;
+    grid-row: 5;
+    display: block; }
+  /*Montissori*/
+  .montiBloque {
+    grid-template-rows: repeat(9, auto); }
+  .montiVideo {
+    grid-column: 1/span 1;
+    grid-row: 3;
+    width: 100px; }
+  .montiTip {
+    grid-column: 1/span 3;
+    grid-row: 4; }
+  .juegoTitulo {
+    grid-column: 1/span 3;
+    grid-row: 5; }
+  .imgUno {
+    grid-column: 1/span 3;
+    grid-row: 6; }
+  .imgDos {
+    grid-column: 1/span 3;
+    grid-row: 7; }
+  .imgTres {
+    grid-column: 1/span 3;
+    grid-row: 8; }
+  .montiFooter {
+    grid-column: 1/span 3;
+    grid-row: 9;
+    display: block; }
+  .montiVideo {
+    grid-column: 1/span 3;
+    width: 300px;
+    height: auto; }
+  /*productos*/
+  .productoBloque {
+    grid-template-rows: repeat(8, auto); }
+  .descripcion {
+    grid-column-start: 1; }
+  .productDesc {
+    width: auto; }
+  .imgprodDos {
+    grid-column-start: 1;
+    grid-row: 5; }
+  .imgprodTres {
+    grid-column-start: 1;
+    grid-row: 6; }
+  .imgprodCuatro {
+    grid-column-start: 1;
+    grid-row: 7; }
+  .prodFooter {
+    grid-row: 8; } }
+
+/*  Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header {
+    grid-column: 1/span 3;
+    grid-row: 1;
+    display: block; }
+  aside {
+    grid-column: 1/span 3;
+    grid-row: 4; }
+  .boton {
+    flex-direction: column; }
+  footer {
+    grid-column: 1/span 3;
+    grid-row: 5;
+    display: block; }
+  /*Montissori*/
+  .montiBloque {
+    grid-template-rows: repeat(9, auto); }
+  .montiVideo {
+    grid-column-start: 1;
+    grid-row: 3;
+    width: 100px; }
+  .montiTip {
+    grid-column-start: 3;
+    grid-row: 3; }
+  .juegoTitulo {
+    grid-column: 1/span 3;
+    grid-row: 5; }
+  .imgUno {
+    grid-column-start: 1;
+    grid-row: 6; }
+  .imgDos {
+    grid-column-start: 3;
+    grid-row: 6; }
+  .imgTres {
+    grid-column-start: 1;
+    grid-row: 7; }
+  .montiFooter {
+    grid-column: 1/span 3;
+    grid-row: 9;
+    display: block; }
+  .montiVideo {
+    grid-column: 1/span 3;
+    width: 300px;
+    height: auto; }
+  /*productos*/
+  .productoBloque {
+    grid-template-rows: repeat(8, auto); }
+  .descripcion {
+    grid-column-start: 1; }
+  .productDesc {
+    width: auto; }
+  .imgprodDos {
+    grid-column-start: 3;
+    grid-row: 4; }
+  .imgprodTres {
+    grid-column-start: 1;
+    grid-row: 5; }
+  .imgprodCuatro {
+    grid-column-start: 3;
+    grid-row: 5; }
+  .prodFooter {
+    grid-row: 8; } }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .body {
+    background-color: #F8F1F1; } }
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .body {
+    background-color: #F8F1F1;
+    /* verde */ } }
+
+/*  Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .body {
+    background-color: #F8F1F1;
+    /* amarillo */ } }

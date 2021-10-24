@@ -1,0 +1,21 @@
+/*Util*/
+@import"./util/reset";
+@import"./util/forma";
+
+
+
+/*Partials*/
+
+/* @import "./partials/header";
+@import "./partials/footer";
+@import "./partials/menu";
+@import "./partials/tablas";
+@import "./partials/imagenes"; */
+
+
+/*Paginas*/
+@import "./pages/iniciocontacto";
+@import "./pages/productos";
+@import "./pages/montissori";
+
+@import"./util/responsive";

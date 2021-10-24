@@ -1,0 +1,252 @@
+/*INICIO Media Queries Bootstrap*/
+
+@media (max-width: 575.98px) { 
+  header
+       {
+         grid-column: 1/span 3;
+         grid-row: 1;
+         display: block;   
+       }
+  .inicioBloque {
+    grid-template-rows: repeat(5 ,auto);
+    }
+  .textoPrincipal {
+      padding: 10Px;
+      font-size: 150%;
+      text-align: left;
+      line-height: 1; }
+  aside
+  {
+    grid-column: 1/span 3;
+    grid-row: 4;
+  }
+  .boton
+  {
+    flex-direction: column;    
+  }
+  footer
+  {
+    grid-column: 1/span 3;
+    grid-row: 5;
+      display: block;   
+  }
+  /*Montissori*/
+  .montiBloque {
+    grid-template-rows: repeat(9 ,auto);
+  }
+  .montiVideo
+{
+  grid-column: 1/span 1;
+   grid-row: 3;
+   width: 100px;
+ }
+ .montiTip
+{
+  grid-column: 1/span 3;
+   grid-row: 4;
+ }
+ 
+.juegoTitulo
+{
+  grid-column: 1/span 3;
+   grid-row: 5;
+ }
+.imgUno
+    {
+      grid-column: 1/span 3;
+      grid-row: 6;
+     }
+.imgDos
+     {
+      grid-column: 1/span 3;
+        grid-row: 7;
+      }
+.imgTres
+      {
+        grid-column: 1/span 3;
+      
+         grid-row: 8;
+       }
+.montiFooter
+       {
+         grid-column: 1/span 3;
+         grid-row: 9;
+           display: block;   
+       }
+.montiVideo
+       {
+         grid-column: 1/span 3;
+         width: 300px;
+         height: auto;
+        }
+/*productos*/
+.productoBloque {
+
+  grid-template-rows: repeat(8 ,auto);
+ 
+}
+.descripcion
+{
+  grid-column-start: 1;
+ }
+.productDesc
+{
+  width: auto;
+ }
+.imgprodDos
+{
+  grid-column-start: 1;
+   grid-row: 5;
+ }
+ .imgprodTres
+{
+  grid-column-start: 1;
+   grid-row:6;
+ }
+ .imgprodCuatro
+{
+  grid-column-start: 1;
+   grid-row: 7;
+ }
+ .prodFooter
+ {
+   grid-row: 8;
+ }
+
+  
+  
+ 
+}
+
+/*  Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header
+  {
+    grid-column: 1/span 3;
+    grid-row: 1;
+    display: block;   
+  }
+ 
+  aside
+  {
+    grid-column: 1/span 3;
+    grid-row: 4;
+  }
+  .boton
+  {
+    
+    flex-direction: column;
+   
+  }
+  footer
+  {
+    grid-column: 1/span 3;
+    grid-row: 5;
+      display: block;   
+  }
+  /*Montissori*/
+  .montiBloque {
+    grid-template-rows: repeat(9 ,auto);
+  }
+  .montiVideo
+{
+  grid-column-start: 1;
+   grid-row: 3;
+   width: 100px;
+ }
+ .montiTip
+{
+  grid-column-start: 3;
+   grid-row: 3;
+ }
+ 
+.juegoTitulo
+{
+  grid-column: 1/span 3;
+   grid-row: 5;
+ }
+.imgUno
+    {
+      grid-column-start: 1;
+      grid-row: 6;
+     }
+.imgDos
+     {
+      grid-column-start: 3;
+        grid-row: 6;
+      }
+.imgTres
+      {
+        grid-column-start: 1;
+      
+         grid-row: 7;
+       }
+.montiFooter
+       {
+         grid-column: 1/span 3;
+         grid-row: 9;
+           display: block;   
+       }
+.montiVideo
+       {
+         grid-column: 1/span 3;
+         width: 300px;
+         height: auto;
+        }
+/*productos*/
+.productoBloque {
+
+  grid-template-rows: repeat(8 ,auto);
+ 
+}
+.descripcion
+{
+  grid-column-start: 1;
+ }
+.productDesc
+{
+  width: auto;
+ }
+.imgprodDos
+{
+  grid-column-start: 3;
+   grid-row: 4;
+ }
+ .imgprodTres
+{
+  grid-column-start: 1;
+   grid-row:5;
+ }
+ .imgprodCuatro
+{
+  grid-column-start: 3;
+   grid-row: 5;
+ }
+ .prodFooter
+ {
+   grid-row: 8;
+ }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+   .body{
+  background-color: #F8F1F1;
+  } 
+}
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  .body{
+      background-color: #F8F1F1;/* verde */
+  }
+ 
+}
+
+/*  Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .body{
+      background-color: #F8F1F1; /* amarillo */
+  }
+}

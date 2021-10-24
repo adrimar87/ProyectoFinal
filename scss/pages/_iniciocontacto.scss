@@ -1,0 +1,102 @@
+/*estilos inicio y form contacto*/
+/*Titulo Principal*/
+.tituloP {
+    color: #DB6400;
+    font-family: 'Style Script', cursive;
+    text-align: center;
+    font-size: 60px;
+    margin-left: 5px; }
+
+/*Logo*/
+.logo {
+    width: 130px;
+    margin-left: 5px;
+    animation: logoMove 10s infinite; }
+  
+  @keyframes logoMove {
+    0% {
+      transform: rotate(-20deg); }
+    50% {
+      transform: rotate(20deg); }
+    100% {
+      transform: rotate(-20deg); } }
+
+/*Logo redes sociales*/
+.header__imgRs {
+  width: 35px;
+  height: 35px;
+  align-self: flex-start;
+  order: 5;
+  animation: redMove 10s infinite; }
+
+@keyframes redMove {
+  0% {
+    transform: rotateX(50deg); }
+  50% {
+    transform: rotateY(150deg); }
+  75% {
+    transform: rotateZ(90deg); }
+  100% {
+    transform: rotateX(50deg); } }
+/*Menu Paginas*/
+.menuPag {
+  margin-left: 5px;
+  text-decoration: none;
+  display: inline-block; }
+  .menuPag > li {
+    float: left; }
+  .menuPag li a {
+    background-color: #A3D2CA;
+    color: #3a8b89;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
+    border-radius: 5px; }
+  .menuPag li:hover {
+    background-color: #A3D2CA;
+    text-decoration: none; }
+  .menuPag li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px; }
+    .menuPag li ul li {
+      position: relative; }
+      .menuPag li ul li ul {
+        right: -140px;
+        top: 0px; }
+  .menuPag:hover > ul {
+    display: block; }
+
+/*Subtitulos*/
+.subTitulo
+{
+  color: #FFA45B;
+  font-weight: 900;
+  font-size: 250%;
+  font-family: 'Style Script', cursive;
+}
+/*Texto Principal*/
+.textoPrincipal {
+  margin-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-size: 150%;
+  color: #5EAAA8;
+  font-weight: bolder;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  line-height: 1.6; }
+
+  .subTitulocontact
+{
+  color: #FFA45B;
+  font-weight: 900;
+  font-size: 120%;
+  font-family: 'Indie Flower', cursive;
+}
+/*Pie Pagina*/
+  .footer__imgRsf {
+      width: 35px;
+      height: 35px; }

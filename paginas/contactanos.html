@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Contacto o Consulta</title>
+    <meta name="keywords" content="pregunta, consulta, contacto, formulario, comentario">
+    <meta name="description" content="comentario o consulta de algun producto">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--tipo letra Titulo-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--tipo letra Titulo-->
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet"><!--tipo letra Titulo-->
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- tipo letra texto -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"><!--  bootstrap -->
+    <link rel="stylesheet" href="../css/style.css">  <!--Archivo con estilos-->
+</head>
+<body>
+    <div class="inicioBloque">
+        
+       
+    
+            <header>
+                <img class="logo" src="../multimedia/elefante.png" alt="Elefantes naranja">
+                <h1 class="tituloP">Cositas Lindas y Chic</h1><!--Titulo Principal-->
+                <div>
+                    <img src="../multimedia/Insta.png" alt="Logo de Instagram" class="header__imgRs" class =".logoInsta"><!--Logo redes-->
+                    <img  src="../multimedia/facebookDos.png" alt="Logo de Facebook" class="header__imgRs" class=".logoFace"><!--Logo redes-->   
+                </div>
+            </header >
+       
+            <nav>
+                <ul class="menuPag">
+                        <li><a   href="../index.html">Inicio   </a></li> <!--saco line de linkeo-->
+                        <li><a   href="./organizadores.html">Organizadores</a></li> 
+                        <li><a   href="./parapasear.html">Para Pasear</a> </li> 
+                        <li ><a   href="./tipsmontessori.html">Tips Montessori</a></li>
+                        <li ><a   href="./contactanos.html">Contactanos</a></li>
+                </ul>  
+            </nav>  
+
+            <form>
+                <H2 class="subTitulo">Contactanos</H2>
+                <H3 class="subTitulocontact">Envianos tu Consulta o Comentario te responderemos a la brevedad</H3>
+                <div>
+                    <label for="nombre_apellido" class="subTitulocontact" >Nombre:</label>	<!--Nombre del Campo -->
+                    <input  type="text" name="Nombre" id="nombre_apellido" /><!-- Espacio Vacio donde se ingresa la info -->
+                    <label for="Email" class="subTitulocontact">Email:</label>	
+                    <input type="email" name="Email" id="Email"/>
+                </div>
+                <!--Menu Despegable -->
+                <div class="menuDesplegable">
+                    <label for="producto" class="subTitulocontact">Producto</label> 
+                    <select  name="Producto" id="producto">
+                        <option value="SP" >Seleccionar Producto</option>
+                        <option value="Neceser">Neceser</option>
+                        <option value="Lona">Lona</option>
+                        <option value="Porta Ropa">Porta Ropa</option>
+                        <option value="Cestos">Cestos</option>
+                        <option value="Almohadita">Almohadita</option>
+                        <option value="Colchoncito">Colchoncito</option>
+                        <option value="Cambiadores">Cambiadores</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Comentarios" class="subTitulocontact">Consulta/Comentario:</label>	<br>
+                    <textarea type="text" rows="10" cols="50" name="Comentarios"></textarea> <br>
+                </div>
+            </form>
+            <aside class="checkBox">
+                <h3 class="subTitulocontact">Conoces el Metodo Montessori?</h3> <!--Check Box -->
+                <div>  
+                    <label for="afirmativo" class="textoC">SI</label>
+                    <input type="checkbox" name="SI"  id="afirmativo" value="si">
+                    <label for="negativo" class="textoC">NO</label>
+                    <input type="checkbox" name="NO" id="negativo" value="no"> <br>
+                </div>
+                <div class="boton">
+                    <div>
+                        <input  type="submit" value="Enviar "/><!--Botones -->
+                    </div>
+                    <div>
+                        <input  type="reset" value="Limpiar "/>  
+                    </div>
+                    
+                </div>
+            </aside>  
+            <footer >
+                <h4>CositasLindas@2017</h4>
+                <DIV >
+                    <h4 >Escribenos:CositasLindas@gmail.com</h4>
+                </DIV>  
+                <div >
+                    <h4>Encontranos en </h4>
+                    <img src="../multimedia/Insta.png" alt="Logo de Instagram" class="footer__imgRsf">
+                    <img src="../multimedia/facebookDos.png" alt="Logo de Facebook" class="footer__imgRsf">
+                </div>
+                    
+               
+            </footer>
+        
+    </div>
+     <!--  bootstrap -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+     
+</body>
+</html>

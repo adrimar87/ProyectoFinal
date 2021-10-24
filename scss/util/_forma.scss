@@ -1,0 +1,246 @@
+ /*GRID Inicio y Contacatanos*/
+ .inicioBloque {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(5 ,auto);
+   /*  background-color: #2196F3; */
+    padding: 10px;
+    gap: 5px;
+  }
+  .inicioBloque>* {
+   /*  background-color: rgba(255, 255, 255, 0.8); */
+   /*  border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  header
+  {
+    grid-column: 1/span 3;
+    grid-row: 1;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+ nav
+  {
+    grid-column: 1/span 3;
+    grid-row: 2;
+   
+  }
+  article
+  {
+    grid-column: 1/span 3;
+    grid-row: 3;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+  }
+  aside
+  {
+    grid-column-start: 2;
+    grid-row: 4;
+    padding: 5px;
+  
+  }
+  form
+  {
+    grid-column-start: 2;
+    grid-row: 3;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .menuDesplegable
+  {
+    grid-column-start: 2;
+    grid-row: 3;
+    width: 180px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    text-align: left;  
+  }
+  .checkBox
+  {
+    grid-column-start: 2;
+    grid-row: 4;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    text-align: left;  
+  }
+
+  .boton
+  {
+    grid-column-start: 2;
+    grid-row: 4;
+    padding: 15px;
+    margin: 5px;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    
+  }
+  footer
+  {
+    grid-column: 1/span 3;
+    grid-row: 5;
+      display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #3a8b89;
+    background-color: #A3D2CA;
+    font-family: 'Style Script', cursive;
+    margin-top: 15px;
+    font-size: 200%;
+    border-radius: 5px;
+  }
+ /*GRID Montessori*/
+ .montiBloque {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(6 ,auto);
+   /*  background-color: #2196F3; */
+    padding: 10px;
+    gap: 5px;
+  }
+  .montiBloque>* {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .montiVideo
+  {
+    grid-column: 1/span 2;
+     grid-row: 3;
+    
+   }
+   .montiTip
+  {
+    grid-column-start: 3;
+    grid-row: 3;
+    padding: 5px;
+    border-radius: 5px;
+    color: #5EAAA8;
+    font-family: 'Indie Flower', cursive;
+    font-size: 120%;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.0;
+    width: 250px;
+   
+   }
+  
+  .juegoTitulo
+  {
+    grid-column: 1/span 3;
+     grid-row: 4;
+   }
+  .imgUno
+      {
+        grid-column-start: 1;
+         display: inline;
+         grid-row: 5;
+       }
+  .imgDos
+       {
+        grid-column-start: 2;
+          display: inline;
+          grid-row: 5;
+          
+        }
+  .imgTres
+        {
+         grid-column-start: 3;
+           display: inline;
+           grid-row: 5;
+         }
+  
+  .montiFooter
+         {
+          grid-column: 1/span 3;
+          grid-row: 6;
+            display: inline-flex;
+          justify-content: space-around;
+          align-items: center;
+          color: #3a8b89;
+          background-color: #A3D2CA;
+          font-family: 'Style Script', cursive;
+          margin-top: 15px;
+          font-size: 200%;
+          border-radius: 5px;
+             
+         }
+
+         /*GRID Productos*/
+.productoBloque {
+    display: grid;
+    grid-template-columns:25% auto auto 25% ;
+    grid-template-rows: repeat(6 ,auto);
+    /* background-color: #2196F3; */
+    padding: 10px;
+    gap: 5px;
+  }
+  .productoBloque>* {
+   /*  background-color: rgba(255, 255, 255, 0.8); */
+   /*  border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .prodHeader
+  {
+    grid-column: 1/span 4;
+     grid-row: 1;
+   }
+   .prodMenu
+   {
+    grid-column: 1/span 4;
+     grid-row: 2;
+   }
+  .descripcion
+  {
+    grid-column: 2/span 2;
+     grid-row: 3;
+   }
+   .imgprodUno
+  {
+    grid-column-start: 1;
+     grid-row: 4;
+     background-color: #cce9e4;
+     border-radius: 5px;
+   }
+   .imgprodDos
+  {
+    grid-column-start: 2;
+     grid-row: 4;
+     background-color: #cce9e4;
+     border-radius: 5px;
+   }
+   .imgprodTres
+  {
+    grid-column-start: 3;
+     grid-row:4;
+      background-color: #cce9e4;
+     border-radius: 5px;
+   }
+   .imgprodCuatro
+  {
+    grid-column-start:  4;
+     grid-row: 4;
+     background-color: #cce9e4;
+     border-radius: 5px;
+   }
+   .prodFooter
+   {
+    grid-column: 1/span 4;
+     grid-row: 6;
+   }
